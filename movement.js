@@ -70,14 +70,14 @@
         }
 
         if (_screenPositionStart < _this.s.start) {
-            if (_this._state.current != 0) {
+            if (_this._state.current !== 0) {
                 _this._state.current = 0; 
                 _this.el.style = _this._initialStyle; 
             }
         }
 
         if (_screenPositionStart > _this.s.start && _screenPositionEnd < _this.s.end) {
-            if (_this._state.current != 1) {
+            if (_this._state.current !== 1) {
                 _this._state.current = 1; 
            
                 if (_this.s.callback)
@@ -89,7 +89,7 @@
         }
 
         if (_screenPositionStart > _this.s.start && _screenPositionEnd > _this.s.end) {
-            if (_this._state.current != 2) {
+            if (_this._state.current !== 2) {
                 _this._state.current = 2; 
  
                 if (_this.s.callback)
