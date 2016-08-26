@@ -60,7 +60,7 @@
 		var _this = this; 
 
 		var _screenPositionStart = window.pageYOffset; 
-        var _screenPositionEnd = window.pageYOffset + _this.el.offsetHeight; 
+        var _screenPositionEnd = window.pageYOffset + window.innerHeight; 
 
         var _insertOrChangeProperties = function (el, object) {
         	for (var propName in object) {
